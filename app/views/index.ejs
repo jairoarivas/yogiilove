@@ -1,45 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 	<meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title>YogiiLove</title>
 	<base href="/">
 	<link rel="shortcut icon" type="image/x-con" href="images/yogiilove_icon.ico" />
+
+	<!-- fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+
 	<!--bootstrap-->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-	<!-- my style sheet -->
-	<link rel="stylesheet" href = "/app.styles.css" type= "text/css">
-	<!-- fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Monda" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Julius+Sans+One" rel="stylesheet">
+	<!-- custom style sheet -->
+	<link rel="stylesheet" href = "/styles.css" type= "text/css">
 
 </head>
-<body>
-		<yogiilove>
-			<div class = "outer">
-				<div class = "middle">
-					<div class = "inner">
-						<div class = "align-middle mx-auto">
-							YOGIILOVE LOADING ...
+<body class = "webFont">
+	<yogiilove>
+		<div class = "container-fluid p-0 m-0">
+			<div class = "loadingBackground row p-0 m-0">
+				<div class = "backgroundFilter col">
+					<div class = "loadingEye">
+					</div>
+					<div class = "spinner">
+						<div class = "loadingPeddles">
 						</div>
 					</div>
+					<h1>YOGIILOVE</h1>
 				</div>
 			</div>
-		</yogiilove>
-
-
+		</div>
+	</yogiilove>
 
 	<script type = "text/javascript">
 		window.user = <%- user || 'null' %>;
 	</script>
-
 	<!-- systemJS scrips -->
-
 	<script src="lib/core-js/client/shim.min.js"></script>
 	<script src="lib/zone.js/dist/zone.js"></script>
 	<script src="lib/reflect-metadata/Reflect.js"></script>
