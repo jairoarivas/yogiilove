@@ -2,7 +2,7 @@
 /* purple c780ce */
 
 body{
-  background-color: rgb(255, 233, 190);
+  background-color: rgb(233, 233, 233);
 }
 
 /* -------------- loading screen ---------------- */
@@ -21,8 +21,9 @@ body{
 }
 
 .backgroundFilter{
-  padding-top: 30vh;
-  padding-bottom: 15vh;
+  margin-top: 30vh;
+  margin-bottom: 15vh;
+  height: 55vh;
 }
 
 .backgroundFilter h1{

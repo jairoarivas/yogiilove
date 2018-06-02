@@ -1,1 +1,145 @@
-Hello!
+<div class = "container-fluid p-0 m-0">
+
+  <!-- header/navigation -->
+  <div class = "row p-0 m-0">
+    <div class = "col tButton">
+
+      <h2 class = "float-left" style = "color: rgb(28,28,28); margin-bottom: -60px; padding-top: 18px;">YOGIILOVE</h2>
+
+      <!-- menu toggle button -->
+      <button class = "toggleButton float-right" (click) = "clicker($event)">
+        <span class = "burger"></span>
+        <span class = "burger"></span>
+        <span class = "burger"></span>
+        <span class = "cross1"></span>
+        <span class = "cross2"></span>
+      </button>
+
+      <!-- menu dropdown -->
+      <ul class = "menuList">
+        <li class = "mx-auto">
+          <button type = "button" class = " menuButton"><h4 class = "m-0">ABOUT</h4></button>
+        </li>
+        <li class = "mx-auto">
+          <button type = "button" class = "menuButton"><h4 class = "m-0">BLOG</h4></button>
+        </li>
+        <li class = "mx-auto">
+          <button type = "button" class = "menuButton"><h4 class = "m-0">GALLERY</h4></button>
+        </li>
+        <li class = "mx-auto">
+          <button type = "button" class = "menuButton"><h4 class = "m-0">SCHEDULE</h4></button>
+        </li>
+        <li class = "mx-auto">
+          <button type = "button" class = "menuButton"><h4 class = "m-0">OUR PROJECTS</h4></button>
+        </li>
+        <li class = "mx-auto">
+          <button type = "button" class = "menuButton"><h4 class = "m-0">CONTACT US</h4></button>
+        </li>
+      </ul>
+    </div>
+
+    <!-- navigation for bigger screens -->
+    <div class = "col menuBar m-0 p-0">
+      <div class = "row p-0 m-0">
+        <div class ="col-5" style = "padding-left: 5vw;">
+          <div class ="row">
+            <div class ="col-4" style = "text-align: center; padding-top: 3vh; height:8vh;">
+              <button href="#" class = "barButton"><h4 style = "color: rgb(28,28,28);">ABOUT US</h4></button>
+            </div>
+            <div class ="col-4" style = "text-align: center; padding-top: 3vh; height:8vh;">
+              <button href="#" class = "barButton"><h4 style = "color: rgb(28,28,28);">BLOG</h4></button>
+            </div>
+            <div class ="col-4" style = "text-align: center; padding-top: 3vh; height:8vh;">
+              <button href="#" class = "barButton"><h4 style = "color: rgb(28,28,28);">GALLERY</h4></button>
+            </div>
+          </div>
+        </div>
+        <div class = "col-2" style = "text-align: center; padding-top: 3vh; height:8vh;">
+          <button href="#" style = "border-style:none; background-color: rgba(0,0,0,0);"><h2 style = "color: rgba(59, 32, 68, 0.7); font-weight: bold;">YOGIILOVE</h2></button>
+        </div>
+        <div class ="col-5" style = "padding-right: 5vw">
+          <div class ="row">
+            <div class ="col-4" style = "text-align: center; padding-top: 3vh; height:8vh;">
+              <button href="#" class = "barButton"><h4 style = "color: rgb(28,28,28);">SCHEDULE</h4></button>
+            </div>
+            <div class ="col-4" style = "text-align: center; padding-top: 3vh; height:8vh;">
+              <button href="#" class = "barButton"><h4 style = "color: rgb(28,28,28);">PROJECTS</h4></button>
+            </div>
+            <div class ="col-4" style = "text-align: center; padding-top: 3vh; height:8vh;">
+              <button href="#" class = "barButton"><h4 style = "color: rgb(28,28,28);">CONTACT US</h4></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!---------- home page ---------- >
+
+  <!-- welcome sign -->
+  <div class = "row p-0 m-0 restOfSite welcomeSign">
+    <div class = "col darkFilter">
+      <h1>YOGIILOVE</h1>
+      <h1>WELLNESS</h1>
+      <p>Grow from love to radiate love</p>
+      <div class ="mx-auto buttonWrap">
+        <button type = "button" class = "yogiButton">
+          <h4 class = "m-0 p-0">LEARN MORE</h4>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class = "row p-0 m-0">
+    <div class = "col hdr">
+      <h1>UPCOMING CLASSES</h1>
+    </div>
+  </div>
+
+  <!-- upcoming classes -->
+  <div class = "row p-0 m-0">
+    <div class = "col-lg-4 classCard">
+      <div class = "row p-0 m-0">
+        <div class = "img1">
+        </div>
+      </div>
+      <div class = "row m-0 p-0 desc">
+        <div class ="row" style = "height: 20vh">
+          <h3 style = "font-weight: bold; color:rgba(59, 32, 68, 0.7);">VINYASA YOGA</h3>
+          <h4>SUNDAYS 10AM</h4>
+          <h4>PEACOCK PARK, COCONUT GROVE</h4>
+        </div>
+        <p>60 minutes designed to help you drown out the external world and tap into your own power. Made for ALL ages and levels.</p>
+        <p style = "font-style: italic">**All proceeds for this class go towards helping a small village in Nicaragua.</p>
+      </div>
+    </div>
+    <div class = "col-lg-4 classCard">
+      <div class = "row p-0 m-0">
+        <div class = "img2">
+        </div>
+      </div>
+      <div class = "row p-0 m-0 desc">
+        <div class ="row" style = "height: 20vh">
+          <h3 style = "font-weight: bold; color:rgba(59, 32, 68, 0.7);">SUNRISE HOT POWER YOGA</h3>
+          <h4>TUESDAYS & THURSDAYS 6:30AM</h4>
+          <h4>WYNWOOD YOGA STUDIO</h4>
+        </div>
+        <p>Mornings set the tone for the rest of your day. Start yours with a sweaty 60 minute practice that includes meditation, intention setting, powerful sequencing, and a Sivasana that leaves you floating for the rest of your day.</p>
+      </div>
+    </div>
+    <div class = "col-lg-4 classCard">
+      <div class = "row p-0 m-0">
+        <div class = "img3">
+        </div>
+      </div>
+      <div class = "row p-0 m-0 desc">
+        <div class ="row" style = "height: 20vh">
+          <h3 style = "font-weight: bold; color:rgba(59, 32, 68, 0.7);">POWER YOGA</h3>
+          <h4>WEDNESDAYS 5:45PM & 7:00PM</h4>
+          <h4>BUDDHA SHACK, COCONUT GROVE</h4>
+        </div>
+        <p>Creative playlist will keep you lifted during a powerful sequence made to remind you just how strong you actually are.</p>
+      </div>
+    </div>
+  </div>
+
+</div>
