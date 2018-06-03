@@ -6741,6 +6741,30 @@ var core_1 = __webpack_require__(1);
 var HomeComponent = /** @class */ (function () {
     function HomeComponent() {
     }
+    HomeComponent.prototype.ngOnInit = function () {
+        //when button is clicked becomes true
+        this.wasClicked = false;
+        //g hold all the items with class "restOfSite"
+        //will be used to hide all none nav menu items when menu is opened
+        this.g = document.getElementsByClassName('restOfSite');
+    };
+    //click event for menu button
+    HomeComponent.prototype.clicker = function (event) {
+        if (this.wasClicked) {
+            this.wasClicked = false;
+            event.currentTarget.classList.remove('clicked');
+            for (var i = 0; i < this.g.length; i++) {
+                this.g[i].style.display = 'flex';
+            }
+        }
+        else {
+            event.currentTarget.classList.add('clicked');
+            for (var i = 0; i < this.g.length; i++) {
+                this.g[i].style.display = 'none';
+            }
+            this.wasClicked = true;
+        }
+    };
     HomeComponent = __decorate([
         core_1.Component({
             selector: 'home',
@@ -8113,8 +8137,8 @@ var AppComponent = /** @class */ (function () {
     }
     AppComponent = __decorate([
         core_1.Component({
-            selector: 'ufmedlife',
-            template: "\n  <header></header>\n  <router-outlet></router-outlet>\n"
+            selector: 'yogiilove',
+            template: "\n  <router-outlet></router-outlet>\n"
         })
     ], AppComponent);
     return AppComponent;
