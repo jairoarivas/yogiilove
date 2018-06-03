@@ -271,7 +271,7 @@ ul.menuList li{
 
 .welcomeSign{
   height: 88vh;
-  background-image: url("../images/lovelife2.jpg");
+  background-image: url("../images/vane.jpg");
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -413,6 +413,172 @@ ul.menuList li{
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.forCause{
+  height: 100vh;
+  width: 100%;
+  background-image: url("../images/hands.jpg");
+  background-position: 40%,50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.causeFilter{
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(28, 28, 28, 0.5);
+  color: rgb(233,233,233);
+}
+.causeH{
+  height: 12vh;
+  padding: 0;
+  margin: 0;
+  padding-top: 3vh;
+  padding-bottom: 6vh;
+}
+.causeH h1{
+  text-align: center;
+  font-weight: bold;
+  padding: 0;
+  margin: 0;
+}
+.causeD{
+  height: 85vh;
+  padding: 0;
+  margin: 0;
+  padding-bottom:5vh;
+}
+.causeD p{
+  text-align: justify;
+  font-size: 120%;
+}
+
+.causeBut{
+  height: 10vh;
+  margin-top: -3vh;
+}
+
+/* yoga for ADOLESCENCE */
+.adoImage{
+  height: 30vh;
+  max-width: 100%;
+  background-image: url("../images/sunsetYoga.jpg");
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 7vh;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  margin-bottom: 5vh;
+}
+
+.adoButton{
+  border-color: rgb(28,28,28);
+  color: rgb(28,28,28);
+}
+.adoButton h4{
+  font-size: 100%;
+}
+.adoButton:hover{
+  color: rgb(233,233,233);
+}
+
+.adoDesc{
+    font-size: 120%;
+
+}
+
+.adolH{
+  height: 20vh;
+  padding-top: 6vh;
+  padding-bottom: 6vh;
+}
+.adolH h1{
+  color: rgba(59, 32, 68, 0.7);
+  font-weight:bold;
+  text-align: center;
+}
+
+.widerBtn{
+  width: 80%;
+  margin-bottom: 10vh;
+}
+/* private class */
+
+.yogaImage{
+  height: 100vh;
+  background-image: url("../images/lovelife2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.yogaFilter{
+  height:100vh;
+  background-color: rgba(28, 28, 28, .3);
+  justify-content: center;
+}
+
+.yogaFilter h1:nth-child(1){
+  min-height: 9vh;
+  margin: 0;
+  color: rgb(233,233,233);
+  text-align: center;
+  padding-top:12vh;
+  font-weight: bold;
+  font-size: 300%;
+}
+.yogaFilter h1:nth-child(2){
+  min-height: 9vh;
+  color: rgb(233,233,233);
+  text-align: center;
+  padding-top: 0;
+  font-weight: bold;
+  font-size: 300%;
+  margin-left: 0;
+  margin:0;
+}
+.yogaFilter h1:nth-child(3){
+  min-height: 9vh;
+  margin:0;
+  color: rgb(233,233,233);
+  text-align: center;
+  padding-top: 0;
+  font-weight: bold;
+  font-size: 300%;
+}
+.yogaFilter p{
+  color: rgb(233,233,233);
+  text-align: center;
+  padding-top: 7vh;
+  font-style: italic;
+  font-size: 120%;
+}
+
+/* footer */
+
+.foot{
+  height: 30vh;
+}
+.logo{
+  margin-top: 5vh;
+  height: 20vh;
+  width: 20vh;
+  background-image: url("../images/yogiilovelogo.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.logo p{
+  height: 5vh;
+  font-size: 120%;
+  font-style: italic;
+  font-weight: bold;
+  margin: 0;
+  color: rgb(28,28,28);
+}
 /* for bigger than 600 pixels aka tablets */
 /* @media only screen and (min-width: 600px) {
   .tButton{
@@ -479,5 +645,83 @@ ul.menuList li{
     transform: scale(1.1);
   }
 }
+
+/* yoga for a cause */
+
+.forCause{
+  background-image: url("../images/amor.jpg");
+}
+
+.causeD p{
+  text-align: justify;
+  font-size: 120%;
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+
+.causeH h1{
+  text-align: center;
+  font-size: 600%;
+  font-weight: bold;
+  padding: 0;
+  margin: 0;
+}
+.causeH{
+  height:30vh;
+  padding-top: 6vh;
+}
+.causeD{
+  height: 60vh;
+}
+.causeD p{
+  text-align: justify;
+  font-size: 150%;
+}
+.causeBut{
+  height: 15vh;
+  margin-top: 2vh;
+}
+
+.adoDesc{
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
+.adoDesc p:nth-child(1){
+}
+.adoDesc p:nth-child(2){
+}
+/* yoga for ADOLESCENCE */
+.adoImage{
+  margin: 0;
+  height: 60vh;
+  margin-bottom: 10vh;
+  margin-right:5vw;
+}
+
+.adoButton h4{
+  font-size: 120%;
+}
+
+.adolH{
+  height: 30vh;
+  padding-top: 6vh;
+  padding-bottom: 6vh;
+}
+.adolH h1{
+  color: rgba(59, 32, 68, 0.7);
+  font-size: 600%;
+  font-weight:bold;
+  text-align: center;
+}
+
+/* private class */
+
+.yogaFilter p{
+  margin-left:25vw ;
+  margin-right:25vw ;
+}
+
+/* footer */
 
 }
