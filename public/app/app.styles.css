@@ -271,13 +271,12 @@ ul.menuList li{
 
 .welcomeSign{
   height: 88vh;
+  width: 100%;
   background-image: url("../images/vane.jpg");
-  background-position: top  !important;
+  background-position: top;
   background-repeat: no-repeat;
-  background-size: cover !important;
-  -webkit-background-size: cover;
-  background-attachment: fixed !important;
-
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .darkFilter{
