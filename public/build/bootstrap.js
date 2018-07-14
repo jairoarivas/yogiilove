@@ -2724,7 +2724,7 @@ var NgbDatepickerNavigation = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngb_date__ = __webpack_require__(37);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__datepicker__ = __webpack_require__(162);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ngb_date_parser_formatter__ = __webpack_require__(165);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__util_positioning__ = __webpack_require__(88);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__util_positioning__ = __webpack_require__(89);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ngb_date_adapter__ = __webpack_require__(114);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ngb_calendar__ = __webpack_require__(43);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__datepicker_service__ = __webpack_require__(163);
@@ -3463,7 +3463,7 @@ var NgbDropdownModule = (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return NgbDropdown; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__dropdown_config__ = __webpack_require__(166);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__util_positioning__ = __webpack_require__(88);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__util_positioning__ = __webpack_require__(89);
 
 
 
@@ -4400,7 +4400,7 @@ var NgbPopoverModule = (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return NgbPopover; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__util_triggers__ = __webpack_require__(363);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__util_positioning__ = __webpack_require__(88);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__util_positioning__ = __webpack_require__(89);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__util_popup__ = __webpack_require__(115);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__popover_config__ = __webpack_require__(168);
 
@@ -5431,7 +5431,7 @@ var NgbTooltipModule = (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return NgbTooltip; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__util_triggers__ = __webpack_require__(363);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__util_positioning__ = __webpack_require__(88);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__util_positioning__ = __webpack_require__(89);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__util_popup__ = __webpack_require__(115);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__tooltip_config__ = __webpack_require__(173);
 
@@ -5738,7 +5738,7 @@ var NgbHighlight = (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return NgbTypeahead; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__(29);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_BehaviorSubject__ = __webpack_require__(104);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_BehaviorSubject__ = __webpack_require__(105);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_BehaviorSubject___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_BehaviorSubject__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_operator_let__ = __webpack_require__(272);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_operator_let___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_operator_let__);
@@ -5748,7 +5748,7 @@ var NgbHighlight = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_operator_switchMap___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_rxjs_operator_switchMap__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_observable_fromEvent__ = __webpack_require__(240);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_observable_fromEvent___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_rxjs_observable_fromEvent__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__util_positioning__ = __webpack_require__(88);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__util_positioning__ = __webpack_require__(89);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__typeahead_window__ = __webpack_require__(174);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__util_popup__ = __webpack_require__(115);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__util_util__ = __webpack_require__(16);
@@ -6186,7 +6186,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-__webpack_require__(106);
+__webpack_require__(84);
 var core_1 = __webpack_require__(1);
 var http_1 = __webpack_require__(79);
 var Observable_1 = __webpack_require__(0);
@@ -6738,12 +6738,53 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = __webpack_require__(1);
+var Rx_1 = __webpack_require__(84);
 var HomeComponent = /** @class */ (function () {
     function HomeComponent() {
     }
+    // xscrollPosition:number;
+    // yscrollPosition:number;
+    // scrollLoop(){
+    //   this.xscrollPosition = window.scrollX;
+    //   this.yscrollPosition = window.scrollY;
+    //   this.setTranslate(0,this.yscrollPosition,this.image);
+    //
+    //   requestAnimationFrame(this.scrollLoop);
+    // }
+    //
+    // setTranslate(xPos, yPos,el){
+    //   el.style.transform = "translate3d(" + xPos + ", " + yPos + "px, 0";
+    // }
+    HomeComponent.prototype.displayNextImage = function () {
+        if (this.num >= 3) {
+            this.num = 0;
+        }
+        if (this.num === 0) {
+            document.getElementById('adoImage1').style.display = 'block';
+            document.getElementById('adoImage2').style.display = 'none';
+            document.getElementById('adoImage3').style.display = 'none';
+        }
+        else if (this.num === 1) {
+            document.getElementById('adoImage1').style.display = 'none';
+            document.getElementById('adoImage2').style.display = 'block';
+            document.getElementById('adoImage3').style.display = 'none';
+        }
+        else if (this.num === 2) {
+            document.getElementById('adoImage1').style.display = 'none';
+            document.getElementById('adoImage2').style.display = 'none';
+            document.getElementById('adoImage3').style.display = 'block';
+        }
+        this.num++;
+    };
     HomeComponent.prototype.ngOnInit = function () {
+        this.num = 0;
+        console.debug(this.num);
+        // this.image = document.getElementById("welcomeImage");
+        // window.addEventListener("DOMContentLoaded", this.scrollLoop, false);
         //when button is clicked becomes true
         this.wasClicked = false;
+        var pic = Rx_1.Observable.timer(0, 3000);
+        pic.subscribe(this.displayNextImage);
         //g hold all the items with class "restOfSite"
         //will be used to hide all none nav menu items when menu is opened
         this.g = document.getElementsByClassName('restOfSite');
@@ -7275,7 +7316,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-__webpack_require__(106);
+__webpack_require__(84);
 var Observable_1 = __webpack_require__(0);
 var core_1 = __webpack_require__(1);
 var http_1 = __webpack_require__(79);
@@ -7402,7 +7443,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-__webpack_require__(106);
+__webpack_require__(84);
 var Observable_1 = __webpack_require__(0);
 var core_1 = __webpack_require__(1);
 var http_1 = __webpack_require__(79);
@@ -8334,7 +8375,7 @@ exports.EventsRoutes = [{
 
 /***/ }),
 
-/***/ 88:
+/***/ 89:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
