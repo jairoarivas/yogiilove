@@ -10,7 +10,18 @@ var core_1 = require("@angular/core");
 var HomeComponent = /** @class */ (function () {
     function HomeComponent() {
     }
+    HomeComponent.prototype.scrollLoop = function () {
+        this.xscrollPosition = window.scrollX;
+        this.yscrollPosition = window.scrollY;
+        this.setTranslate(0, this.yscrollPosition, this.image);
+        requestAnimationFrame(this.scrollLoop);
+    };
+    HomeComponent.prototype.setTranslate = function (xPos, yPos, el) {
+        el.style.transform = "translate3d(" + xPos + ", " + yPos + "px, 0";
+    };
     HomeComponent.prototype.ngOnInit = function () {
+        this.image = document.getElementById("welcomeImage");
+        window.addEventListener("DOMContentLoaded", this.scrollLoop, false);
         //when button is clicked becomes true
         this.wasClicked = false;
         //g hold all the items with class "restOfSite"

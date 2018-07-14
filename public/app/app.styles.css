@@ -227,6 +227,12 @@ ul.menuList li{
   }
 }
 
+.padLeft20{
+  padding-left: 5vw;
+}
+.padRight20{
+  padding-right: 5vw;
+}
 /* menu item button */
 .menuButton{
   background-color: rgba(0, 0, 0, 0);
@@ -270,17 +276,25 @@ ul.menuList li{
 /* ---------- welcome sign ---------- */
 
 .welcomeSign{
-  height: 88vh;
+  height: 128vh;
   width: 100%;
   background-image: url("../images/vane.jpg");
-  background-position: top;
+  background-position: 30% 0;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+#welcomeImage{
+  /* height: 128vh;
+  width: 100%;
+
   background-attachment: fixed;
+  position: fixed;
+  z-index:-10; */
 }
 
 .darkFilter{
-  height:88vh;
+  height:128vh;
   background-color: rgba(28, 28, 28, .3);
   justify-content: center;
 }
@@ -293,6 +307,7 @@ ul.menuList li{
   padding-top:22vh;
   font-weight: bold;
   font-size: 300%;
+  margin-top: 20vh;
 }
 .darkFilter h1:nth-child(2){
   min-height: 9vh;
@@ -313,14 +328,18 @@ ul.menuList li{
 .yogiButton{
   padding: 0;
   background-color: rgba(0, 0, 0, 0);
-  min-width: 100%;
   min-height:100%;
   border-style: solid;
   border-width: 5px;
   border-color:rgb(233, 233, 233);
   color:rgb(233, 233, 233);
   border-radius: 15px;
-  margin-top: 5vh;
+  align-self: center;
+}
+
+.yogiButton h4{
+  padding-left: 5vw;
+  padding-right: 5vw;
 }
 
 .yogiButton:hover{
@@ -346,6 +365,7 @@ ul.menuList li{
   display:block;
   width: 60vw;
   height: 15vh;
+  text-align: center;;
 }
 
 .hdr{
@@ -422,7 +442,7 @@ ul.menuList li{
   background-position: 40%,50%;
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
 }
 
 .causeFilter{
@@ -513,7 +533,7 @@ ul.menuList li{
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
 }
 
 .yogaFilter{
@@ -591,13 +611,20 @@ ul.menuList li{
 } */
 
 /* for bigger than 768 pixels aka desktops */
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 1025px){
+
+  .padLeft20{
+    padding-left: 5vw;
+  }
+  .padRight20{
+    padding-right: 5vw;
+  }
 
 /* ---------- welcome sign ---------- */
 
-/* .welcomeSign{
-  height: 88vh;
-} */
+.welcomeSign{
+  background-position: top;
+}
 
 .darkFilter h1:nth-child(1){
   font-size: 600%;
@@ -628,6 +655,10 @@ ul.menuList li{
 .barButton{
   background-color: rgba(199, 189, 166, 0);
   border-style: none;
+}
+
+.barButton h4{
+  font-size: 120%;
 }
 
 .barButton:hover{
@@ -725,4 +756,12 @@ ul.menuList li{
 
 /* footer */
 
+}
+@media only screen and (min-width: 1333px){
+  .padLeft20{
+    padding-left: 20vw;
+  }
+  .padRight20{
+    padding-right: 20vw;
+  }
 }
