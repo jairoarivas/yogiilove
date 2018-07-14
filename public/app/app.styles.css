@@ -363,33 +363,35 @@ ul.menuList li{
 
 .buttonWrap{
   display:block;
-  width: 60vw;
   height: 15vh;
   text-align: center;;
 }
 
+/* general headers */
+
 .hdr{
-  padding-top:6vh;
+  padding-top:12vh;
   text-align: center;
-  height: 20vh;
-  padding-bottom: 6vh;
+  height: 30vh;
+  padding-bottom: 12vh;
 }
 .hdr h1{
   padding: 0;
   margin: 0;
   color: rgb(28,28,28);
 }
+
+/* upcoming classes section */
+
 .classCard{
-  height: 80vh;
+  height: 150vh;
   width: 100%;
 }
 .desc{
-  height: 50vh;
   width: 100%;
 }
 
 .desc h3{
-  height:6vh;
   width: 100%;
   text-align: center;
   margin:0;
@@ -398,7 +400,6 @@ ul.menuList li{
 }
 
 .desc h4{
-  height: 6vh;
   width: 100%;
   text-align: center;
   padding: 0;
@@ -408,90 +409,129 @@ ul.menuList li{
 .desc p{
   text-align: justify;
   font-size: 120%;
+  padding-top: 5vh;
 }
 
+
 .img1{
-  height: 30vh;
+  height: 80vh;
   width: 100%;
-  background-image: url("../images/park1.jpg");
+  background-image: url("../images/peacockPark.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .img2{
-  height: 30vh;
+  height: 80vh;
   width: 100%;
-  background-image: url("../images/rocks.jpg");
+  background-image: url("../images/wynwood.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .img3{
-  height: 30vh;
+  height: 80vh;
   width: 100%;
-  background-image: url("../images/sunset.jpg");
+  background-image: url("../images/buddhaShack.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
+/* yoga for a cause */
+
 .forCause{
-  height: 100vh;
+  height: 150vh;
   width: 100%;
-  background-image: url("../images/hands.jpg");
+  background-image: url("../images/clouds.jpg");
   background-position: 40%,50%;
   background-repeat: no-repeat;
   background-size: cover;
+  z-index: -10;
   /* background-attachment: fixed; */
 }
 
 .causeFilter{
-  height: 100vh;
+  height: 150vh;
   width: 100%;
   background-color: rgba(28, 28, 28, 0.5);
   color: rgb(233,233,233);
+
 }
+
+.causeFilter2{
+  height: 150vh;
+  width: 100%;
+  background-color: rgba(28, 28, 28, 0.5);
+  color: rgb(233,233,233);
+  display: none;
+}
+
 .causeH{
-  height: 12vh;
-  padding: 0;
-  margin: 0;
-  padding-top: 3vh;
-  padding-bottom: 6vh;
+  padding-top:12vh;
+  text-align: center;
+  height: 30vh;
+  padding-bottom: 12vh;
 }
 .causeH h1{
   text-align: center;
-  font-weight: bold;
   padding: 0;
   margin: 0;
 }
 .causeD{
-  height: 85vh;
-  padding: 0;
-  margin: 0;
-  padding-bottom:5vh;
+  width:100%;
 }
 .causeD p{
   text-align: justify;
   font-size: 120%;
+  margin:0;
+  padding-bottom: 5vh;
+  padding-right: 10vw;
+  padding-left: 10vw;
 }
 
-.causeBut{
-  height: 10vh;
-  margin-top: -3vh;
-}
+
 
 /* yoga for ADOLESCENCE */
-.adoImage{
-  height: 30vh;
-  max-width: 100%;
-  background-image: url("../images/sunsetYoga.jpg");
+#adoImage1{
+  height: 88vh;;
+  width: 80vw;
+  background-image: url("../images/ado1.jpg");
   background-position:center;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-top: 7vh;
-  margin-left: 5vw;
+  margin-top: 12vh;
+  margin-right: 5vw;
+  margin-bottom: 5vw;
+  border-radius: 15px;
+}
+
+#adoImage2{
+  height: 88vh;;
+  width: 80vw;
+  background-image: url("../images/ado1.jpg");
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 12vh;
+  margin-right: 5vw;
+  margin-bottom: 5vw;
+  border-radius: 15px;
+  display: none;
+}
+
+#adoImage3{
+  height: 88vh;;
+  width: 80vw;
+  background-image: url("../images/ado1.jpg");
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 12vh;
   margin-right: 5vw;
   margin-bottom: 5vh;
+  border-radius: 15px;
+  display: none;
 }
 
 .adoButton{
@@ -507,37 +547,55 @@ ul.menuList li{
 
 .adoDesc{
     font-size: 120%;
-
 }
 
-.adolH{
-  height: 20vh;
-  padding-top: 6vh;
-  padding-bottom: 6vh;
+.adoDesc p{
+  margin-bottom: 5vh;
+  padding-left: 10vw;
+  padding-right: 10vw;
 }
-.adolH h1{
+
+.adolH2{
+  height: 30vh;
+  padding-top: 12vh;
+  padding-bottom: 12vh;
+  display: block;
+}
+
+.adolH2 h1{
   color: rgba(59, 32, 68, 0.7);
   font-weight:bold;
   text-align: center;
+  display: block;
 }
 
-.widerBtn{
-  width: 80%;
-  margin-bottom: 10vh;
+.adolH1{
+  height: 30vh;
+  padding-top: 12vh;
+  padding-bottom: 12vh;
+  display: none;
 }
+
+.adolH1 h1{
+  color: rgba(59, 32, 68, 0.7);
+  font-weight:bold;
+  text-align: center;
+  display: none;
+}
+
 /* private class */
 
 .yogaImage{
-  height: 100vh;
+  height: 150vh;
   background-image: url("../images/lovelife2.jpg");
-  background-position: center;
+  background-position: 75% 0;
   background-repeat: no-repeat;
   background-size: cover;
   /* background-attachment: fixed; */
 }
 
 .yogaFilter{
-  height:100vh;
+  height:150vh;
   background-color: rgba(28, 28, 28, .3);
   justify-content: center;
 }
@@ -547,35 +605,17 @@ ul.menuList li{
   margin: 0;
   color: rgb(233,233,233);
   text-align: center;
-  padding-top:12vh;
+  padding-top:30vh;
+  padding-bottom: 12vh;
   font-weight: bold;
-  font-size: 300%;
 }
-.yogaFilter h1:nth-child(2){
-  min-height: 9vh;
-  color: rgb(233,233,233);
-  text-align: center;
-  padding-top: 0;
-  font-weight: bold;
-  font-size: 300%;
-  margin-left: 0;
-  margin:0;
-}
-.yogaFilter h1:nth-child(3){
-  min-height: 9vh;
-  margin:0;
-  color: rgb(233,233,233);
-  text-align: center;
-  padding-top: 0;
-  font-weight: bold;
-  font-size: 300%;
-}
+
 .yogaFilter p{
   color: rgb(233,233,233);
   text-align: center;
-  padding-top: 7vh;
   font-style: italic;
   font-size: 120%;
+  padding-bottom: 12vh;
 }
 
 /* footer */
@@ -600,6 +640,29 @@ ul.menuList li{
   margin: 0;
   color: rgb(28,28,28);
 }
+
+.fb{
+  margin-top: 5vh;
+  margin-bottom: 10vh;
+  height: 7vh;
+  width: 7vh;
+  background-image: url("../images/fb.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.insta{
+  margin-top: 5vh;
+  margin-bottom: 10vh;
+  height: 7vh;
+  width: 7vh;
+  background-image: url("../images/insta.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
 /* for bigger than 600 pixels aka tablets */
 /* @media only screen and (min-width: 600px) {
   .tButton{
@@ -610,8 +673,8 @@ ul.menuList li{
   }
 } */
 
-/* for bigger than 768 pixels aka desktops */
-@media only screen and (min-width: 1025px){
+/* for bigger than 1024 pixels aka desktops */
+@media only screen and (min-width: 1026px){
 
   .padLeft20{
     padding-left: 5vw;
@@ -678,73 +741,113 @@ ul.menuList li{
   }
 }
 
+/* Upcoming classes */
+
 /* yoga for a cause */
 
 .forCause{
-  background-image: url("../images/amor.jpg");
+  height: 130vh;
+}
+
+.causeFilter{
+  height:130vh;
+  width: 50%;
+}
+
+.causeFilter2{
+  height:130vh;
+  width: 50%;
+  display: block;
 }
 
 .causeD p{
-  text-align: justify;
-  font-size: 120%;
-  margin-left: 10vw;
-  margin-right: 10vw;
-}
-
-.causeH h1{
-  text-align: center;
-  font-size: 600%;
-  font-weight: bold;
-  padding: 0;
-  margin: 0;
-}
-.causeH{
-  height:30vh;
-  padding-top: 6vh;
-}
-.causeD{
-  height: 60vh;
-}
-.causeD p{
-  text-align: justify;
-  font-size: 150%;
-}
-.causeBut{
-  height: 15vh;
-  margin-top: 2vh;
-}
-
-.adoDesc{
   padding-left: 5vw;
   padding-right: 5vw;
 }
 
-.adoDesc p:nth-child(1){
+.causeH{
+  padding-top: 30vh;
 }
-.adoDesc p:nth-child(2){
+
+.causeH h1{
+  font-size: 300%;
+  font-weight: bold;
 }
+
 /* yoga for ADOLESCENCE */
-.adoImage{
-  margin: 0;
-  height: 60vh;
-  margin-bottom: 10vh;
-  margin-right:5vw;
+
+#adoImage1{
+  height: 88vh;;
+  width: 40vw;
+  background-image: url("../images/ado1.jpg");
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 12vh;
+  margin-right: 5vw;
+  margin-bottom: 12vh;
+  border-radius: 15px;
+}
+
+#adoImage2{
+  height: 88vh;;
+  width: 40vw;
+  background-image: url("../images/ado1.jpg");
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 12vh;
+  margin-right: 5vw;
+  margin-bottom: 12vh;
+  border-radius: 15px;
+  display: none;
+}
+
+#adoImage3{
+  height: 88vh;;
+  width: 40vw;
+  background-image: url("../images/ado1.jpg");
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 12vh;
+  margin-right: 5vw;
+  margin-bottom: 12vh;
+  border-radius: 15px;
+  display: none;
 }
 
 .adoButton h4{
   font-size: 120%;
 }
 
-.adolH{
+.adolH2{
   height: 30vh;
-  padding-top: 6vh;
-  padding-bottom: 6vh;
+  padding-top: 12vh;
+  padding-bottom: 12vh;
+  display: none
 }
-.adolH h1{
+
+.adolH2 h1{
   color: rgba(59, 32, 68, 0.7);
-  font-size: 600%;
   font-weight:bold;
   text-align: center;
+  display: none;
+}
+
+.adolH1{
+  height: 30vh;
+  padding-top: 12vh;
+  padding-bottom: 12vh;
+  display: block;
+}
+
+.adolH1 h1{
+  color: rgba(59, 32, 68, 0.7);
+  font-size: 250%;
+  font-weight:bold;
+  text-align: center;
+  display: block;
 }
 
 /* private class */
@@ -754,10 +857,57 @@ ul.menuList li{
   margin-right:25vw ;
 }
 
+.yogaFilter h1:nth-child(1){
+  min-height: 9vh;
+  margin: 0;
+  color: rgb(233,233,233);
+  text-align: center;
+  padding-top:50vh;
+  font-weight: bold;
+  font-size: 300%;
+}
+
+.yogaImage{
+  height: 150vh;
+  background-image: url("../images/lovelife2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-attachment: fixed; */
+}
+
 /* footer */
+
+.fb{
+  margin-top: 10vh;
+  height: 7vh;
+  width: 7vh;
+  background-image: url("../images/fb.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.insta{
+  margin-top: 10vh;
+  height: 7vh;
+  width: 7vh;
+  background-image: url("../images/insta.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
 
 }
 @media only screen and (min-width: 1333px){
+  .causeFilter{
+    padding-left: 0;
+  }
+
+  .causeFilter2{
+    margin-bottom: 0;
+    z-index: 0;
+  }
   .padLeft20{
     padding-left: 20vw;
   }
